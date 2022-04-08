@@ -1,0 +1,134 @@
+body{
+  color: #FFF;
+  font-size: 25px;
+  font-family: "Segoe UI", "Ubuntu", sans-serif;
+}
+
+.enviroment{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.welc{
+  position: relative;
+  top: 37px;
+  text-align: center;
+}
+
+#in{
+  background-color: #303030;
+  border: 4px #252525 solid;
+  border-radius: 20px
+
+  position: absolute;
+  height: auto;
+  width: 600px;
+  margin: auto;
+
+  padding: 50px 0;
+  text-align: center;
+}
+
+#txt{
+  width: 40px;
+
+  font-size: 25px;
+  border: 0;
+  border-bottom: 3px #393939 solid;
+  outline: none;
+  margin: 3px auto;
+  background: none;
+
+  transition: 0.2s;
+}
+
+#http{
+  width: 40px;
+
+  font-size: 25px;
+  border: 0;
+  border-bottom: 3px #393939 solid;
+  outline: none;
+  margin: 3px auto;
+  background: none;
+
+  transition: 0.2s;
+}
+
+#http:focus{
+  width: 200px;
+
+  font-size: 25px;
+  font-family: "Segoe UI";
+  border: 0;
+  border-bottom: 3px #3498BD solid;
+  background: none;
+  color: #FFF;
+}
+
+#strt{
+  width: 40px;
+
+  font-size: 25px;
+  border: 0;
+  border-bottom: 3px #393939 solid;
+  outline: none;
+  margin: 3px auto;
+  background: none;
+
+  transition: 0.2s;
+}
+
+#txt:focus{
+  width: 200px;
+
+  font-size: 25px;
+  font-family: "Segoe UI";
+  border: 0;
+  border-bottom: 3px #3498BD solid;
+  background: none;
+  color: #FFF;
+}
+
+#strt:focus{
+  width: 200px;
+
+  font-size: 25px;
+  font-family: "Segoe UI";
+  border: 0;
+  border-bottom: 3px #3498BD solid;
+  background: none;
+  color: #FFF;
+}
+
+#btn{
+  height: 35px;
+  font-size: 20px;
+  font-family: "Segoe UI", "Ubuntu", sans-serif;
+
+  background-color: #999;
+  border: 2px #888 solid;
+  border-radius: 5px;
+  /* 7/29/2021 Updated */
+}
+
+/* 7/29/2021 Updated */
+.G{
+  animation-name: Glogo;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes Glogo {
+  0%{
+    color: #FFF;
+  }
+  50%{
+    color: #4285F4;
+  }
+  100%{
+    color: #FFF;
+  }
+}
