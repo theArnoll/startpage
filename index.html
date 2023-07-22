@@ -1,42 +1,62 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href=".\css.css">
-  <title>Start Page　　　　　　　[Tool]</title>
-</head>
-<body bgcolor="#191919">
 
-  <div class="welc">
-    Enter any URL you wanna go here.
-  </div>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css.css">
+        <title>Start Page</title>
+    </head>
 
-  <div class="enviroment">
+    <body bgcolor="#111" onload="onstart()">
 
-    <div class="https" id="in">
-        https://
-      <input id="txt" name="order" type="text">
-      <input id='btn' type="submit" value=" GO! " onclick="location.href='https://'+document.getElementById('txt').value" >
-    </div>
+        <div class="welc">
+            Where do you want to go today?
+        </div>
 
-    <div class="strt" id="in">
-      <span class="G">G</span>oogle Search <br>Google://
-      <input id="strt" name="strt" type="text">
-      <input id='btn' type="submit" value=" GO! " onclick="location.href='https://www.google.com/search?q='+document.getElementById('strt').value" >
-    </div>
+        <div class="enviroment">
 
-    <div class="strt" id="in">
-      Go to some Linux system's start page. <br>
-      <input id="strt" name="strt" type="text">
-      <input id='btn' type="submit" value=" GO! " onclick="location.href='https://start.'+document.getElementById('strt').value" >
-    </div>
+            <div class="content">
+                <div class="in">
+                    https://
+                    <input class="txt" id="URL" name="order" type="text" onkeydown="tabSW(event, 'srch')"> <!-- class -> JS -->
+                    <button class='btn' id="URLbtn" type="button"> GO! </button> <br>
+                    <span class="kbInst">Tab</span>
+                </div>
+            </div>
 
-  </div>
+            <div class="content">
+                <div class="in">
+                    <span class="logo"></span><span class="srchEngine"></span> Search <br>
+                    <span class="srchEngine"></span>://
+                    <input class="txt" id="srch" name="order" type="text" onkeydown="tabSW(event, 'URL')"> <!-- class -> JS -->
+                    <button class='btn' id="SRCHbtn" type="button"> GO! </button> <br>
+                    <span class="kbInst">Enter</span>
+                </div>
+            </div>
 
-  <!-- Spectial thank: Darkcode on YouTube (UI Master) https://youtu.be/HV7DtH3J2PU
-                       Information on Stack Overflow https://pse.is/3dsb8e
-                       Information on w3scools.com https://pse.is/3dj5fw -->
+            <!-- <div class="strt" id="in">
+                Go to some Linux system's start page. <br>
+                <input id="strt" name="strt" type="text">
+                <input id='btn' type="submit" value=" GO! " onclick="location.href='https://start.'+document.getElementById('strt').value" >
+            </div> -->
 
-<script src="https://www.drv.tw/inc/wd.js?s=fsc2htcooyq14jjfe3uoiq"></script></body>
+        </div>
+
+        <a href="./old/index.html">
+            <div class="hint">
+                1 function has been deleted. Click here to go to previous version. &emsp;
+                <!-- <span class="kbInst">RCtrl</span> -->
+            </div>
+        </a>
+
+        <script src="js.js"></script>
+
+    </body>
+    
 </html>
+
+<!-- Thanks: Darkcode on YouTube (UI Master) https://youtu.be/HV7DtH3J2PU
+            Information on Stack Overflow https://pse.is/3dsb8e
+            Information on w3scools.com https://pse.is/3dj5fw
+            Force tab key select specific item https://stackoverflow.com/a/43205792 -->
